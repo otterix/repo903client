@@ -1,0 +1,11 @@
+{
+  "name": "903client",
+  "version": "1.0.0",
+  "description": "Frontend for entering takings for 903",
+  "author": "Edmond Tang",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm install express",
+    "deploy": "git subtree push --prefix dist heroku master"
+  }
+}
