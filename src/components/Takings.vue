@@ -1,16 +1,31 @@
 <template>
-  <div>
-    <ul>
-        <li> Curr Month Takings </li>
-        <li> Prev Month Takings </li>
-    </ul>
+  <div id="Takings">
+    <SourceSelection v-on:sourceChanged="sourceChanged"></SourceSelection>
+    <Takingslist v-bind:source="source"></Takingslist>
   </div>
 </template>
 
-<script type = "text/javascript" >
+<script>
+import Takingslist from './Takingslist'
+import SourceSelection from './SourceSelection'
 
 export default {
-};
+  name: 'Takings',
+  components: {
+    Takingslist,
+    SourceSelection
+  },
+  data () {
+    return {
+      source: ''
+    }
+  },
+  methods: {
+    sourceChanged: function (source) {
+      this.source = source
+    }
+  }
+}
 </script>
 <style>
 </style>

@@ -1,10 +1,10 @@
 <template>
-  <div class="msg1">
+  <div class="Home">
     <h1>{{ msg1text }}</h1>
     <p><strong>Daily Takings input for 'Meet at 903'</strong></p>
     <br><br>
     <p>Note that this is a personal project being worked on during spare time.
-    <br>Small progressive changes are being made every few days.</p>
+    <br>Small progressive changes are being made every once in a while.</p>
     <p><u>This uses the following technologies:</u></p>
     <ul>Frontend:
         <li><a href="https://vuejs.org/" target="_blank">Vue.js</a></li>
@@ -30,7 +30,8 @@
       <li>
         <a href="https://mlab.com/" target="_blank">mLab (DB host)</a>,
         <a href="https://github.com/" target="_blank">Github (Repo & CI)</a>,
-        <a href="https://www.heroku.com/" target="_blank">Heroku (CD host)</a>
+        <a href="https://gitlab.com/" target="_blank">Gitlab (CI/CD)</a>,
+        <a href="https://www.heroku.com/" target="_blank">Heroku (Host)</a>
       </li>
     </ul>
     <p><sup>Created by Edmond Tang (2017)</sup></p>
@@ -39,7 +40,7 @@
 
 <script>
 export default {
-  name: 'msg1',
+  name: 'Home',
   data () {
     return {
       msg1text: 'Welcome!'
